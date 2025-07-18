@@ -1,0 +1,31 @@
+{
+    "model_name": "deepspeedgpt_2.7b",
+    "uneven_batch_sizes": [
+        13,
+        12,
+        34,
+        5
+    ],
+    "split_uneven_partitions": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+    ],
+    "split_uneven": true,
+    "uneven_microbatches": [
+        1,
+        2,
+        1,
+        1
+    ],
+    "seq_length": 512,
+    "recompute_layer": false,
+    "experiment_name": "paper_deepspeedgpt_2.7b_dp_ga_torch.float16_su_ec_s512_b64_ext1",
+    "ga": true,
+    "use_activation_buffers": true,
+    "use_prefetch_backwards": true,
+    "reduce_dtype": "float32",
+    "autocast_dtype": "float16",
+    "image_size": 384
+}
